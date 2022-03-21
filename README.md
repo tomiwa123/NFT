@@ -60,7 +60,7 @@ In Practical HW 1, you created an asset using `AssetConfigTxn`. In this homework
 - [ ] Fill out the `create_nft` function
 - [ ] inside `main`, create an Algorand client like you did in the previous homeworks and call the `create_nft` function with the correct arguments.
 
-If everything went right, a `NFT CID` will be printed on your screen. If you want to see your art, copy that CID and go to `https://gateway.pinata.cloud/ipfs/cid`, where `cid` should be the CID you just copied.
+If everything went right, a `NFT CID` will be printed on your screen. Make sure to keep this CID as you will need it in the next step.
 
 ### Step 1.7: submit the generated `nft.json` file
 After running the `nft.py` file, a `nft.json` file is created. Save this file because you will need to submit it on Gradescope :)
