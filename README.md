@@ -17,7 +17,7 @@ To know more about IPFS, take a look at he following resources:
 - [https://proto.school/merkle-dags](https://proto.school/merkle-dags)
 
 
-# TODO: talk about ARC3? https://developer.algorand.org/solutions/minting-nfts-on-algorand-using-ipfs/
+## TODO: talk about ARC3? https://developer.algorand.org/solutions/minting-nfts-on-algorand-using-ipfs/
 
 ### Step 1.1: creating an art
 Create a `jpeg` or `png` file with any art :) put that file inside the `src/art/` folder. The file can have any name.
