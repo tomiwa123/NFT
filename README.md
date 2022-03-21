@@ -56,18 +56,22 @@ pip3 install base58
 
 ## Step 2: Linking your NFT to Algorand
 
-Now that you've created your art piece and stored it on IPFS, let's get it onto the Algorand blockchain. Remember creating an Algorand Standard Asset (ASA) in HW1? Well, Algorand makes it super easy for you to create an NFT through that. On Algorand, you can think of NFTs as just another type of asset—the only clause being that there’s only 1 unit of this asset—where you link the metadata (so that the users can verify authenticity). 
+Now that you've created your art piece and stored it on IPFS, let's get it onto the Algorand blockchain. Remember creating an Algorand Standard Asset (ASA) in HW1? Well, Algorand makes it super easy for you to create an NFT through that. On Algorand, you can think of NFTs as just another type of asset; the only clause being that there’s only 1 unit of this asset, which makes the token "non-fungible"/unqiue. The asset also allows you to link metadata, so that the users can verify authenticity.
 
 ### Step 2.1: Create NFT ASA
 In Practical HW 1, you created an asset using `AssetConfigTxn`. In this homework, you will do the same, but with some modifications.
 
-- [ ] Fill out the `nft_info` function
+In the `nft.py` file:
+- [ ] Fill out the `get_nft_info` function
 - [ ] Fill out the `create_nft` function
 - [ ] inside `main`, create an Algorand client like you did in the previous homeworks and call the `create_nft` function with the correct arguments.
 
 If everything went right, a `NFT CID` will be printed on your screen. Make sure to keep this CID as you will need it in the next step.
 
 You might find the following resource useful for this step: (https://developer.algorand.org/docs/get-started/tokenization/nft/
+
+
+Congratulations; you've minted an NFT!
 
 ### Step 2.2: Submit the generated `nft.json` file
 After running the `nft.py` file, a `nft.json` file is created. Save this file because you will need to submit it on Gradescope :)
@@ -83,7 +87,7 @@ First, install django onto your system by running
 ```
 pip3 install django
 ```
-Next, we will launch the server. Navigate to the Step 3 folder and run
+Next, we will launch the server. Navigate to the Step3 folder and run
 ```
 python3 manage.py runserver
 ```
@@ -106,3 +110,6 @@ You will also need to use Pinata again, but this time to retrieve the image inst
 If you do everything correctly, the endpoint `localhost:8000/nft` should serve your NFT from IPFS!
 
 Keep your views.py file for submission on gradescope.
+
+## Step 4 - Airdropping your NFT to the class gallery
+FIXME

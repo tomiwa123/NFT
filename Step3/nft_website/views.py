@@ -4,6 +4,8 @@ import requests
 # TODO USE THIS package
 # from algosdk.v2client import algod
 
+# TODO Feel free to copy-paste the secrets.py file into this folder and import it here
+
 
 def serve_image(request):
     # TODO modify this function to:
