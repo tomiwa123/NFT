@@ -2,13 +2,12 @@
 Aight, let's make some NFTs
 
 This homework has 4 components: 
-1. Choose your art piece and store it on IPFS.
-2. Create an NFT Asset on the Algorand blockchain and link it to the art piece on IPFS
+1. Choose your art piece and store it on IPFS
+2. Make your art piece an NFT Asset by putting in on the Algorand blockchain
 3. Create a local web server that queries the blockchain for your NFT and displays the image
-4. Airdrop your NFT to our TA account (and then we’ll display it on a webpage to see all of your artistic glory)
+4. Airdrop your NFT to our TA account 
 
-Sidenote: We’ll have the students in the class vote on the 3 best NFTs. Tal will purchase the top 3 NFTs for 100, 60, and 40 Algos respectively. 
-
+Sidenote: We’ll display all NFTs airdropped to the TA account on a webpage to see all of your glorious artistic inclinations. We’ll have the students in the class vote on the 3 best NFTs. Tal will purchase the top 3 NFTs for 100, 60, and 40 Algos respectively. 
 
 ## Step 1: Create your NFT
 In this step, you will find an art, upload it to IPFS, and create an NFT on Algorand linking to IPFS.
