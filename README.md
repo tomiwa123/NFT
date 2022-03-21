@@ -1,5 +1,5 @@
 # Practical-HW3
-Practical HW3 for CIS 233
+Aight, let's make some NFTs
 
 This homework has 4 components: 
 1. Choose your art piece and store it on IPFS.
