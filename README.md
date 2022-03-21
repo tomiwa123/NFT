@@ -10,7 +10,7 @@ This homework has 4 components:
 Sidenote: We’ll display all NFTs airdropped to the TA account on a webpage to see all of your glorious artistic inclinations. We’ll have the students in the class vote on the 3 best NFTs. Tal will purchase the top 3 NFTs for 100, 60, and 40 Algos respectively. 
 
 ## Step 1: Create your NFT
-In this step, you will find an art, upload it to IPFS, and create an NFT on Algorand linking to IPFS.
+In this step, you will find a piece of digital art, upload it to IPFS, and create an NFT on Algorand linking to IPFS.
 
 ### What is IPFS?
 The InterPlanetary File System (IPFS) defines itself as "a distributed system for storing and accessing files, websites, applications, and data".
@@ -28,16 +28,16 @@ To know more about IPFS, take a look at the following resources:
 ### TODO: talk about ARC3? https://developer.algorand.org/solutions/minting-nfts-on-algorand-using-ipfs/
 
 ### Step 1.1: Create your Art Piece
-Create a `jpeg` or `png` file with any art :) put that file inside the `src/art/` folder. The file can have any name.
+Create or find a `jpeg` or `png` file with any art :) Place the file inside the `src/art/` folder. The file can have any name.
 
 ### Step 1.2: Create a Pinata account
 In order to upload your art to IPFS, you will use [Pinata](https://www.pinata.cloud/). 
 
-Note: We are using Pinata because, otherwise, you would need to run your own IPFS node and keep it running in order for other people to retrieve it. With Pinata, this is all handled for us and we only need to call some functions.
+Note: Pinata is an API service similar to PureStake. We are using Pinata because without it, you would need to run your own IPFS node to acess the IPFS blockchain. With Pinata, they provide their node for our use in the form of an API.
 
 To create your account, go to [https://www.pinata.cloud/](https://www.pinata.cloud/) and click on `Try for Free` at the top right corner.
 
-After creating your account, you will be redirected to another page where you will be logged in. At the top right corner, there is a small dropdown button right next to the avatar image. Click on it, and then click on `API Keys` (or you can just access [https://app.pinata.cloud/keys](https://app.pinata.cloud/keys)). There, click on `+ New Key`. Active the slider right next to `Admin`, give your key any name you want, and click on `Create key`.
+After creating your account, you will be redirected to another page where you will be logged in. At the top right corner, there is a small dropdown button right next to the avatar image. Click on it, and then click on `API Keys` (or you can just access [https://app.pinata.cloud/keys](https://app.pinata.cloud/keys)). There, click on `+ New Key`. Activate the slider right next to `Admin`, give your key any name you want, and click on `Create key`.
 
 Right after that, a modal will show your API Key, and API secret. Save them at `src/secrets.py`.
 
@@ -45,7 +45,7 @@ Right after that, a modal will show your API Key, and API secret. Save them at `
 Put the Purestake API key you created for the previous assignments in `src/secrets.py`.
 
 ### Step 1.4: Algorand account
-Create (or use a previously created) Algorand account. Put its mnemonic at `src/secrets.py`. If you created a new account, do not forget to fund it at [https://bank.testnet.algorand.network/](https://bank.testnet.algorand.network/).
+Create (or use a previously created) Algorand account. Put its mnemonic at `src/secrets.py`. If you created a new account, do not forget to fund it at [https://bank.testnet.algorand.network/](https://bank.testnet.algorand.network/) with at least a few coins.
 
 ### Step 1.5: install new packages
 There are some new packages you need to add. In your terminal, run:
