@@ -13,7 +13,7 @@ Sidenote: We’ll display all NFTs airdropped to the TA account on a webpage to 
 In this step, you will find an art, upload it to IPFS, and create an NFT on Algorand linking to IPFS.
 
 ### What is IPFS?
-IPFS defines itself as "a distributed system for storing and accessing files, websites, applications, and data".
+The InterPlanetary File System (IPFS) defines itself as "a distributed system for storing and accessing files, websites, applications, and data".
 In IPFS, files are found through a unique identifier, called CID, instead of *where* they are located. For example, in Web2, if we want to find a `.png` file, we would need to specify at which website it is, for example: `https://site.com/file.png`. In IPFS, if we want to file a `.png` file, we would specify its CID, for example: `ipfs://cid`.
 
 In order to create the CID, IPFS splits the file into blocks and hashes each block. Then, it creates a Merkle Tree where the blocks are the leafs of the tree. The root of the Merkle Tree is the CID of the file.
