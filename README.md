@@ -64,3 +64,38 @@ If everything went right, a `NFT CID` will be printed on your screen. Make sure 
 
 ### Step 1.7: submit the generated `nft.json` file
 After running the `nft.py` file, a `nft.json` file is created. Save this file because you will need to submit it on Gradescope :)
+
+
+## Step 3 - Create local web server to view NFT
+
+The next step is to learn how to query the NFT that you’ve minted to your own server for display.
+
+We provide a basic web server to get you started, which can be found in the Step 3 folder. This folder provides the scaffolding of a Django server; Django is a web framework for python that lets you quickly spin up servers.
+
+First, install django onto your system by running 
+```
+pip3 install django
+```
+Next, we will launch the server. Navigate to the Step 3 folder and run
+```
+python3 manage.py runserver
+```
+If you get an error message saying that you have missing packages, go ahead and pip install them as well.
+
+Now, if you open your browser and go to `localhost:8000/nft`
+
+You should see a picture of a gorgeous buddhist temple!
+The handler associated with the path `localhost:8000/nft` can be found in the views.py folder. You can see that the function is currently returning a local image as an HttpResponse. Your job is the following. Modify the handler to:
+
+1. Query the algorand blockchain for your NFT
+2. Recover the IPFS link from the NFT
+3. Query the image from IPFS
+4. Serve the image as an HTTP response
+
+You will need an algod client to query the blockchain for the NFT data. See the following docs: https://py-algorand-sdk.readthedocs.io/en/v1.2.1_a/algod.html
+
+You will also need to use Pinata again, but this time to retrieve the image instead of uploading it. See the following link for retrieving content IPFS through Pinata: https://docs.pinata.cloud/retrieving-content
+
+If you do everything correctly, the endpoint `localhost:8000/nft` should serve your NFT from IPFS!
+
+Keep your views.py file for submission on gradescope.
