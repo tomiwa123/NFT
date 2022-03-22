@@ -132,8 +132,11 @@ that includes the following body. Feel free to search for Postman tutorials on Y
     "asset_id": "<asset_id>",
 }
 ```
+<img width="969" alt="image" src="https://user-images.githubusercontent.com/32405016/159585135-600d4d14-3ea4-4f0e-b7b8-30da82f6109f.png">
 
 This invokes a backend serverless function that approves the receiving of your NFT asset by opting in our account to the asset ID you provide.
+
+If you see a response with the `asset_id` you provided, go confirm the approval transaction on Algoexplorer. Once the transaction takes place, you are ready to transfer.
 
 ### Step 4.2 Transfer
 Once the TA account has opted in, you can airdrop your NFT to it!
