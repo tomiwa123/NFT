@@ -115,7 +115,7 @@ Keep your views.py file for submission on gradescope.
 
 Airdrop is a common marketing tool crypto projects use to kickstart their growth. It literally involves sending tokens/NFTs to people for free. Often, airdrops have certain criteria for participants. 
 
-While crypto projects airdrops for more users, you get to airdrop to participate in our NFT competition and potentially win some Algos!
+While crypto projects airdrops for more users, you get to airdrop to participate in our NFT competition and potentially **win some Algos!**
 - We will give out three awards 250, 150, 100 Algos
 - Winners are determined through TBD
 
