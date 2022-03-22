@@ -121,10 +121,11 @@ While crypto projects airdrops for more users, you get to airdrop to participate
 
 Let's get started.
 
-### Step 4.1 Transfer your newly created NFT to the TA account
+### Step 4.1 Transefer
+Transfer your newly created NFT to the TA account
 	Either using a wallet or programmatically is fine
   - https://developer.algorand.org/docs/get-details/asa/#transferring-an-asset
 
-### Step 4.2 We have set up a Gallery to automatically index asset owned by the TA account
-
-### Step 4.3 Go to https://distracted-varahamihira-80f55c.netlify.app/ to check your NFT!
+### Step 4.2 
+We have set up a Gallery to automatically index asset owned by the TA account
+Go to https://distracted-varahamihira-80f55c.netlify.app/ to check your NFT!
