@@ -113,13 +113,13 @@ Keep your views.py file for submission on gradescope.
 
 ## Step 4 - Airdropping your NFT to the class gallery
 
-Airdrop is a common marketing tool crypto projects use to kickstart their growth. It literally involves sending tokens/NFTs to people for free. Often, airdrops have certain criteria for participants. 
+Airdrop is a common marketing tool crypto projects use to kickstart their growth. It involves sending tokens/NFTs to people for free to generate interest. Often, airdrops have certain criteria for participants. 
 
 While crypto projects airdrops for more users, you get to airdrop to participate in our NFT competition and potentially **win some Algos!**
-- We will give out three awards 250, 150, 100 Algos
+- Tal will purchase the winning NFT of the competition for a 100 [Algos](https://coinmarketcap.com/currencies/algorand/)
 - Winners are determined through TBD
 
-Let's get started.
+All you have to do to participate is to airdrop your NFT to our TA account!
 
 ### Step 4.1 Transfer
 Transfer your newly created NFT to the TA account
@@ -129,3 +129,8 @@ Transfer your newly created NFT to the TA account
 ### Step 4.2 
 We have set up a Gallery to automatically index asset owned by the TA account
 Go to https://distracted-varahamihira-80f55c.netlify.app/ to check your NFT!
+
+
+## Submission
+
+FIXME
