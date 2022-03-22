@@ -135,7 +135,7 @@ This invokes a backend serverless function that approves the receiving of your N
 
 ### Step 4.2 Transfer
 Transfer your newly created NFT to the TA account at the following address:
-`FIXME`
+`UAHTM3EC3PTNDYBA5AGPHVBMXOK4YQE3N23VQEUFAMTHY3AXHBUXDHIWKE`
 
 The following docs may be helpful:
   - https://developer.algorand.org/docs/get-details/asa/#transferring-an-asset
