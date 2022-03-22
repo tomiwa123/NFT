@@ -126,7 +126,7 @@ All you have to do to participate is to airdrop your NFT to our TA account!
 If you remember from HW1, in order for our TA account to receive your NFT, it has to opt into the asset. We have setup the following API for this purpose.
 
 Use Postman or other HTTP clients to send a POST request to https://distracted-varahamihira-80f55c.netlify.app/.netlify/functions/approval
-that includes the following body
+that includes the following body. Feel free to search for Postman tutorials on YouTube if you've never sent a POST request before.
 ```
 {
     "asset_id": "<asset_id>",
