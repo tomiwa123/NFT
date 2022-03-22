@@ -121,7 +121,19 @@ While crypto projects airdrops for more users, you get to airdrop to participate
 
 All you have to do to participate is to airdrop your NFT to our TA account!
 
-### Step 4.1 Transfer
+### Step 4.1 Recipient Approval
+
+Use Postman or other HTTP clients to send a POST request to https://distracted-varahamihira-80f55c.netlify.app/.netlify/functions/approval
+that includes the following body
+```
+{
+    "asset_id": "<asset_id>",
+   }
+```
+
+This invokes a backend serverless function that approves the receiving of your NFT asset.
+
+### Step 4.2 Transfer
 Transfer your newly created NFT to the TA account at the following address:
 `FIXME`
 
@@ -130,7 +142,7 @@ The following docs may be helpful:
 
 Keep the file you used to send the NFT for submission on Gradescope.
 
-### Step 4.2 
+### Step 4.3 
 We have set up a Gallery to automatically index assets owned by the TA account
 Go to https://distracted-varahamihira-80f55c.netlify.app/ to view your classmates' NFT!
 
