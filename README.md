@@ -112,4 +112,19 @@ If you do everything correctly, the endpoint `localhost:8000/nft` should serve y
 Keep your views.py file for submission on gradescope.
 
 ## Step 4 - Airdropping your NFT to the class gallery
-FIXME
+
+Airdrop is a common marketing tool crypto projects use to kickstart their growth. It literally involves sending tokens/NFTs to people for free. Often, airdrops have certain criteria for participants. 
+
+While crypto projects airdrops for more users, you get to airdrop to participate in our NFT competition and potentially win some Algos!
+- We will give out three awards 250, 150, 100 Algos
+- Winners are determined through TBD
+
+Let's get started.
+
+### Step 4.1 Transfer your newly created NFT to the TA account
+	Either using a wallet or programmatically is fine
+  - https://developer.algorand.org/docs/get-details/asa/#transferring-an-asset
+
+### Step 4.2 We have set up a Gallery to automatically index asset owned by the TA account
+
+### Step 4.3 Go to https://distracted-varahamihira-80f55c.netlify.app/ to check your NFT!
