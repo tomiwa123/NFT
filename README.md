@@ -121,9 +121,9 @@ While crypto projects airdrops for more users, you get to airdrop to participate
 
 Let's get started.
 
-### Step 4.1 Transefer
+### Step 4.1 Transfer
 Transfer your newly created NFT to the TA account
-	Either using a wallet or programmatically is fine
+(Either using a wallet or programmatically is acceptable, not graded)
   - https://developer.algorand.org/docs/get-details/asa/#transferring-an-asset
 
 ### Step 4.2 
