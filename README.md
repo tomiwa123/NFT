@@ -9,8 +9,8 @@ This homework has 4 components:
 
 Sidenote: We’ll display all NFTs airdropped to the TA account on a webpage to see all of your glorious artistic inclinations. We’ll have the students in the class vote on the 3 best NFTs. Tal will purchase the top 3 NFTs for 100, 60, and 40 Algos respectively. 
 
-## Step 1: Create your NFT
-In this step, you will find a piece of digital art, upload it to IPFS, and create an NFT on Algorand linking to IPFS.
+## Step 1: Storing the artwork
+In this step, you will find a piece of digital art and upload it to IPFS for storage.
 
 ### What is IPFS?
 The InterPlanetary File System (IPFS) defines itself as "a distributed system for storing and accessing files, websites, applications, and data".
@@ -27,13 +27,13 @@ To know more about IPFS, take a look at the following resources:
 
 ### TODO: talk about ARC3? https://developer.algorand.org/solutions/minting-nfts-on-algorand-using-ipfs/
 
-### Step 1.1: Create your Art Piece
+### Step 1.1: Create your art piece
 Create or find a `jpeg` or `png` file with any art :) Place the file inside the `src/art/` folder. The file can have any name.
 
 ### Step 1.2: Create a Pinata account
 In order to upload your art to IPFS, you will use [Pinata](https://www.pinata.cloud/). 
 
-Note: Pinata is an API service similar to PureStake. We are using Pinata because without it, you would need to run your own IPFS node to acess the IPFS blockchain. With Pinata, they provide their node for our use in the form of an API.
+Note: Pinata is an API service similar to PureStake. We are using Pinata because without it, you would need to run your own IPFS node to access the IPFS blockchain. With Pinata, they provide their node for our use in the form of an API.
 
 To create your account, go to [https://www.pinata.cloud/](https://www.pinata.cloud/) and click on `Try for Free` at the top right corner.
 
@@ -47,18 +47,19 @@ Put the Purestake API key you created for the previous assignments in `src/secre
 ### Step 1.4: Algorand account
 Create (or use a previously created) Algorand account. Put its mnemonic at `src/secrets.py`. If you created a new account, do not forget to fund it at [https://bank.testnet.algorand.network/](https://bank.testnet.algorand.network/) with at least a few coins.
 
-### Step 1.5: install new packages
+### Step 1.5: Install new packages
 There are some new packages you need to add. In your terminal, run:
 ```
 pip3 install requests
 pip3 install base58
 ```
 
-## Step 2: Linking your NFT to Algorand
+### Step 1.6: Upload image to IPFS
+FIXME
 
-Now that you've created your art piece and stored it on IPFS, let's get it onto the Algorand blockchain. Remember creating an Algorand Standard Asset (ASA) in HW1? Well, Algorand makes it super easy for you to create an NFT through that. On Algorand, you can think of NFTs as just another type of asset; the only clause being that there’s only 1 unit of this asset, which makes the token "non-fungible"/unqiue. The asset also allows you to link metadata, so that the users can verify authenticity.
+## Step 2: Minting your NFT on Algorand
+Now that you've created your art piece and stored it on IPFS, let's mint it as an NFT on the Algorand blockchain. Remember creating an Algorand Standard Asset (ASA) in HW1? Well, Algorand makes it super easy for you to create an NFT through that. On Algorand, you can think of NFTs as just another type of asset; the only clause being that there’s only 1 unit of this asset, which makes the token "non-fungible"/unique. The asset also allows you to link metadata, so that the users can verify authenticity.
 
-### Step 2.1: Create NFT ASA
 In Practical HW 1, you created an asset using `AssetConfigTxn`. In this homework, you will do the same, but with some modifications.
 
 In the `nft.py` file:
@@ -73,8 +74,7 @@ You might find the following resource useful for this step: (https://developer.a
 
 Congratulations; you've minted an NFT!
 
-### Step 2.2: Submit the generated `nft.json` file
-After running the `nft.py` file, a `nft.json` file is created. Save this file because you will need to submit it on Gradescope :)
+After running the `nft.py` file, a `nft.json` file is created. Save this file because you will need to submit it on Gradescope along with your source code :)
 
 
 ## Step 3 - Create local web server to view NFT
@@ -98,7 +98,7 @@ Now, if you open your browser and go to `localhost:8000/nft`
 You should see a picture of a gorgeous buddhist temple!
 The handler associated with the path `localhost:8000/nft` can be found in the views.py folder. You can see that the function is currently returning a local image as an HttpResponse. Your job is the following. Modify the handler to:
 
-1. Query the algorand blockchain for your NFT
+1. Query the Algorand blockchain for your NFT
 2. Recover the IPFS link from the NFT
 3. Query the image from IPFS
 4. Serve the image as an HTTP response
@@ -109,7 +109,7 @@ You will also need to use Pinata again, but this time to retrieve the image inst
 
 If you do everything correctly, the endpoint `localhost:8000/nft` should serve your NFT from IPFS!
 
-Keep your views.py file for submission on gradescope.
+Keep your `views.py` file for submission on Gradescope.
 
 ## Step 4 - Airdropping your NFT to the class gallery
 
@@ -122,15 +122,22 @@ While crypto projects airdrops for more users, you get to airdrop to participate
 All you have to do to participate is to airdrop your NFT to our TA account!
 
 ### Step 4.1 Transfer
-Transfer your newly created NFT to the TA account
-(Either using a wallet or programmatically is acceptable, not graded)
+Transfer your newly created NFT to the TA account at the following address:
+`FIXME`
+
+The following docs may be helpful:
   - https://developer.algorand.org/docs/get-details/asa/#transferring-an-asset
 
+Keep the file you used to send the NFT for submission on Gradescope.
+
 ### Step 4.2 
-We have set up a Gallery to automatically index asset owned by the TA account
-Go to https://distracted-varahamihira-80f55c.netlify.app/ to check your NFT!
+We have set up a Gallery to automatically index assets owned by the TA account
+Go to https://distracted-varahamihira-80f55c.netlify.app/ to view your classmates' NFT!
 
 
 ## Submission
-
-FIXME
+Submit the following files to Gradescope:
+- `pinata.py`
+- `nft.py`
+- `nft.json`
+- `view.py`
