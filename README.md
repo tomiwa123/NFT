@@ -50,8 +50,8 @@ Create (or use a previously created) Algorand account. Put its mnemonic at `src/
 ### Step 1.5: Install new packages
 There are some new packages you need to add. In your terminal, run:
 ```
-pip3 install requests
-pip3 install base58
+python3 -m pip install requests
+python3 -m pip install base58
 ```
 
 ### Step 1.6: Upload image to IPFS
@@ -85,13 +85,13 @@ We provide a basic web server to get you started, which can be found in the Step
 
 First, install django onto your system by running 
 ```
-pip3 install django
+python3 -m pip install django
 ```
 Next, we will launch the server. Navigate to the Step3 folder and run
 ```
 python3 manage.py runserver
 ```
-If you get an error message saying that you have missing packages, go ahead and pip install them as well.
+If you get an error message saying that you have missing packages, go ahead and python3 -m pip install them as well.
 
 Now, if you open your browser and go to `localhost:8000/nft`
 
@@ -132,8 +132,11 @@ that includes the following body. Feel free to search for Postman tutorials on Y
     "asset_id": "<asset_id>",
 }
 ```
+<img width="969" alt="image" src="https://user-images.githubusercontent.com/32405016/159585135-600d4d14-3ea4-4f0e-b7b8-30da82f6109f.png">
 
 This invokes a backend serverless function that approves the receiving of your NFT asset by opting in our account to the asset ID you provide.
+
+If you see a response with the `asset_id` you provided, go confirm the approval transaction on Algoexplorer. Once the transaction takes place, you are ready to transfer.
 
 ### Step 4.2 Transfer
 Once the TA account has opted in, you can airdrop your NFT to it!
