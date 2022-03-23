@@ -37,16 +37,19 @@ def pin_image_to_ipfs(file_path):
     # TODO examine response extract out the IpfsHash (this is the CID). Return it
     pass
 
+
 def pin_metadata_to_ipfs(metadata):
     # TODO make POST request to the correct URL, with json=metadata, and using the PINATA_HEADERS
     # TODO examine response extract out the IpfsHash (this is the CID). Return it
     pass
+
 
 def compute_integrity(ipfs_image_cid):
     integrity = ipfscidv0_to_byte32(ipfs_image_cid)
     integrity = base64.b64encode(bytes.fromhex(integrity))
     integrity = "sha256-{}".format(integrity.decode('utf-8'))
     return integrity
+
 
 def compute_metadata_hash(metadata):
     metadata_json_string = json.dumps(metadata)
@@ -55,6 +58,7 @@ def compute_metadata_hash(metadata):
     hash.update(metadata_json_string.encode("utf-8"))
     ipfs_metadata_hash = hash.digest()
     return ipfs_metadata_hash
+
 
 def main():
     # TODO compute absolute path to FILE_NAME and use it to pin image to IPFS
@@ -66,13 +70,8 @@ def main():
         'name': "",
         'description': "",
         'image': "",
-        'image_integrity': "",
+        'ipfs_integrity': "",
         'ipfs_mimetype': "",
-        'properties': {
-            'file_url': "",
-            'file_url_integrity': "",
-            'file_url_mimetype': "",
-        }
     }
 
     # TODO pin metadata to IPFS
