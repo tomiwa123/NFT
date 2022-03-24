@@ -70,8 +70,8 @@ def main():
         'name': "",
         'description': "",
         'image': "",
-        'ipfs_integrity': "",
-        'ipfs_mimetype': "",
+        'image_integrity': "",
+        'image_mimetype': "",
     }
 
     # TODO pin metadata to IPFS
