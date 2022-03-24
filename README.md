@@ -1,3 +1,5 @@
+Due date: April 2nd
+
 # Practical-HW3
 Aight, let's make some NFTs
 
