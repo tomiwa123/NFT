@@ -123,7 +123,8 @@ If you do everything correctly, the endpoint `localhost:8000/nft` should serve y
 Airdrop is a common marketing tool crypto projects use to kickstart their growth. It involves sending tokens/NFTs to people for free to generate interest. Often, airdrops have certain criteria for participants. 
 
 While crypto projects airdrops for more users, you get to airdrop to participate in our NFT competition and potentially **win some Algos!**
-- Tal will purchase the winning NFT of the competition for a 100 [Algos](https://coinmarketcap.com/currencies/algorand/)
+- Tal will purchase the winning NFT of the competition for 100 [Algos](https://coinmarketcap.com/currencies/algorand/)
+  - Note: Only original art pieces are eligible for this award
 - Winners are determined by popular vote from your classmates.
 
 All you have to do to participate is to airdrop your NFT to our TA account!
