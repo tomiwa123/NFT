@@ -62,7 +62,7 @@ As a general guide, this tutorial may be very useful:
 
 You will need to interact with Pinata as the gateway service between you and IPFS. Thus, when you upload (or pin as IPFS calls it) your artwork to IPFS, the [pinata docs](https://docs.pinata.cloud/) will be very useful. Look carefully at the API concerning pinning (hint: you will have to make POST requests to web URLs).
 
-Finally, a note about the metadata JSON object. ARC3 is very particular about the format of this JSON object so use a lot of care here. Here is the official specification for [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md). There's a section about the metadata object that is particularly relevant here. Don't forget to fill out the `art_info.py` file.
+Finally, a note about the metadata JSON object. ARC3 is very particular about the format of this JSON object so use a lot of care here. Here is the official specification for [ARC3](https://github.com/algorandfoundation/ARCs/blob/main/ARCs/arc-0003.md). There's a section about the metadata object that is particularly relevant here. Don't forget to fill out the `art_info.py` file and use the imported variables at the top of `ipfs.py`.
 
 If you've done everything correctly, you should be able to use the following link
 `https://gateway.pinata.cloud/ipfs/<CID>`
@@ -71,7 +71,7 @@ and replace CID to view what you've uploaded (the image and the metadata). This 
 ## Step 2: Minting your NFT on Algorand
 Now that you've created your art piece and stored it on IPFS, let's mint it as an NFT on the Algorand blockchain. Remember creating an Algorand Standard Asset (ASA) in HW1? Well, Algorand makes it super easy for you to create an NFT through that. On Algorand, you can think of NFTs as just another type of asset; the only clause being that there’s only 1 unit of this asset, which makes the token "non-fungible"/unique. 
 
-In Practical HW 1, you created an asset using `AssetConfigTxn`. In this homework, you will do the same, but with some modifications. First, copy and paste your `secrets.py` file from the Step 1 folder into the Step 2 folder. Next, fill out the `ipfs_info.py` file with the output from Step 1. Finally, fill out the TODO items in the `asa.py` file. This is the main file for this Step.
+In Practical HW 1, you created an asset using `AssetConfigTxn`. In this homework, you will do the same, but with some modifications. First, copy and paste your `secrets.py` file from the Step 1 folder into the Step 2 folder. Next, fill out the `ipfs_info.py` file with the output from Step 1. Finally, fill out the TODO items in the `asa.py` file. This is the main file for this Step. Make sure you use the variables imported from `ipfs_info.py` at the top of `asa.py`.
 
 Remember the ARC3 specification as you fill out this file; among other things, your url should point to the IPFS address of the metadata, not the image, and should be suffixed with "#arc3". We leave it to you to make sure you're following the rest of the specifications.
 
