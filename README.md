@@ -28,7 +28,7 @@ To know more about IPFS, take a look at the following resources:
 Algorand NFTs follow a certain official specification that they have to meet in order to be considered an official NFT. This standard is called ARC3 and we will be following it throughout this homework. One of the things it specifies is the way that the artwork corresponding to the NFT is stored. At a high level, the specification states that the artwork must be stored in some location where it is always accessible. IPFS fits this bill. Further, a second file that contains metadata that links to the artwork must also be stored. Later, when we mint the NFT in Algorand, the NFT will link to this metadata file, which links to the actual artwork.
 
 ### Step 1.1: Create your art piece
-But first off, you need some digital art. Create or find a `jpeg` or `png` file with any art. There will be a competition to determine which artwork makes the best NFT with a monetary prize for original artwork, so choose wisely :) We will be validating the originality of the artwork for the competition only; if you don't want the prize, you can just find an image online. If you haven't already, download/clone this repository and place the file inside the `Step1/art/` folder. The file can have any name.
+But first off, you need some digital art. Create or find a `jpeg` or `png` file with any art. There will be a competition to determine which artwork makes the best NFTs with a monetary prize for original artwork, so choose wisely :) We will be validating the originality of the artwork for the competition only; if you don't want the prize, you can just find an image online. If you haven't already, download/clone this repository and place the file inside the `Step1/art/` folder. The file can have any name.
 
 ### Step 1.2: Create a Pinata account
 In order to upload your art to IPFS, you will use [Pinata](https://www.pinata.cloud/). 
@@ -123,7 +123,7 @@ If you do everything correctly, the endpoint `localhost:8000/nft` should serve y
 Airdrop is a common marketing tool crypto projects use to kickstart their growth. It involves sending tokens/NFTs to people for free to generate interest. Often, airdrops have certain criteria for participants. 
 
 While crypto projects airdrops for more users, you get to airdrop to participate in our NFT competition and potentially **win some Algos!**
-- Tal will purchase the winning NFT of the competition for 100 [Algos](https://coinmarketcap.com/currencies/algorand/)
+- Tal will purchase the top 3 NFTs of the competition for 250, 150, and 100 [Algos](https://coinmarketcap.com/currencies/algorand/) respectively.
   - Note: Only original art pieces are eligible for this award
 - Winners are determined by popular vote from your classmates.
 
