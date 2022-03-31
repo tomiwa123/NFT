@@ -171,5 +171,6 @@ Submit the following files to Gradescope:
 - `ipfs_info.py`
 - `asa.py`
 - `views.py`
+- Python file used to airdrop
 
 Congrats on finishing the homework!
