@@ -137,7 +137,7 @@ Use Postman, a python script, or other HTTP clients to send a POST request to ht
 that includes the following body.
 ```
 {
-    "asset_id": "<asset_id>",
+    "asset_id": <asset_id>,
 }
 ```
 
