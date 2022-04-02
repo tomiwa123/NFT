@@ -1,2 +1,8 @@
 *__pycache__*
 Step3/nft_website/__pycache__/*
+.idea/
+.DS_Store
+Step1/.DS_Store
+Step1/secrets.py
+Step2/secrets.py
+Step3/secrets.py
